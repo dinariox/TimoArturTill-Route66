@@ -6,12 +6,12 @@
     right: 0;
     top: 60px;
 
-    width: 50%;
+    width: 100%;
     height: calc(100vh - 60px);
 
     background-color: #222;
     
-    /*display: none;*/
+    display: none;
     z-index: 1000;
     
 }
@@ -24,5 +24,40 @@
     text-align: center;
     text-decoration: none;
     color: white;
+    
+}
+
+#menu-button {
+
+    display: none;
+
+    width: 36px;
+    height: 36px;
+    
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    background-image: url('../img/menu.svg');
+    background-size: cover;
+
+    cursor: pointer;
+    
+}
+
+@media only screen and (max-width: 1270px) {
+    
+    #navbar {
+        
+        display: none;
+        
+    }
+
+    #menu-button {
+
+        display: block;
+        
+    }
     
 }
