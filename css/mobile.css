@@ -1,0 +1,28 @@
+/* CSS © 2017 by Timo Nowak, Artur Makarenko & Till Hammer */
+
+#navbar-mini {
+
+    position: absolute;
+    right: 0;
+    top: 60px;
+
+    width: 50%;
+    height: calc(100vh - 60px);
+
+    background-color: #222;
+    
+    /*display: none;*/
+    z-index: 1000;
+    
+}
+
+.nav-link-mini div {
+
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    
+}
