@@ -33,3 +33,39 @@ if($(window).width() <= 600) {
     $('#logo').attr("src", "../img/logo.png");
     
 }
+
+
+$.urlParam = function(name){
+    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+    if (results==null){
+       return null;
+    }
+    else{
+       return decodeURI(results[1]) || 0;
+    }
+}
+
+if($.urlParam('person_count') != null) {
+
+    $('#form-reservieren').css("display", "none");
+
+    $('#success-div').css("display", "block");
+
+    setTimeout(function() {
+
+        $('#spin').css("display", "none");
+        $('#message').css("display", "block");
+        $('#message-title').css("display", "none");
+        $('#success-title').css("display", "block");
+        $('#dismiss').removeClass('disabled');
+        
+    }, 6000);
+    
+}
+
+
+function reservieren() {
+
+    document.getElementById('form-reservieren').submit();
+    
+}

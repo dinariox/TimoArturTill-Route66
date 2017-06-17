@@ -167,6 +167,12 @@ h2 {
     
 }
 
+.align-left {
+
+    text-align: left;
+    
+}
+
 .small-margin-top {
 
     margin-top: 10px;
@@ -242,5 +248,17 @@ h2 {
 .collapsible {
 
     text-align: left;
+    
+}
+
+.centered {
+
+    margin-left: calc(50% - 35px);
+    
+}
+
+#success-div, #message, #success-title {
+
+    display: none;
     
 }

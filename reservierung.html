@@ -83,8 +83,110 @@
                         Wählen Sie dazu einfach Ihr bevorzugtes Datum und die Uhrzeit aus und geben Sie an, mit wie vielen Personen Sie kommen möchten.
                     </p>
 
-                    <!-- Dieser Link/Button wird hauptsächlich durch das Materialize-Framework gestyled -->
-                    <a class="waves-effect waves-light btn medium-margin-top light-blue darken-3"><i class="material-icons left">thumbs_up_down</i>Feedback geben</a>
+
+
+                    <form id="form-reservieren" class="big-margin-top" method="get" action="">
+
+                        <!-- Dieser Slider wird hauptsächlich durch das Materialize-Framework gestyled -->
+                        <label>Personenanzahl:</label>
+                        <p class="range-field">
+                            <input type="range" name="person_count" id="person_count" min="1" max="20" value="2" />
+                        </p>
+
+                        <br />
+                        
+                        <label>Datum auswählen</label>
+                        <input type="date" name="date" class="datepicker">
+
+                        <br />
+                        <br />
+
+                        <label>Uhrzeit auswählen</label>
+                        <input type="time" name="time" step="300" />
+
+                        <br />
+                        <br />
+
+                        <div class="input-field">
+                            <input id="last_name" name="name" type="text" class="validate">
+                            <label for="last_name">Ihr Nachname</label>
+                        </div>
+
+                        <!-- Dieser Link/Button wird hauptsächlich durch das Materialize-Framework gestyled -->
+                        <a class="waves-effect waves-light btn medium-margin-top red darken-3" onclick="reservieren();"><i class="material-icons right">send</i>Reservieren</a>
+                        
+                    </form>
+
+                    <br /><br />
+
+                    <div id="success-div">
+
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="card blue-grey darken-1">
+                                    <div class="card-content white-text align-left">
+                                        <span id="message-title" class="card-title">Reservierung wird überprüft...</span>
+                                        <span id="success-title" class="card-title">Reservierung abgeschlossen!</span>
+
+                                        <div id="spin" class="preloader-wrapper active medium-margin-top centered">
+                                            <div class="spinner-layer spinner-blue">
+                                                <div class="circle-clipper left">
+                                                    <div class="circle"></div>
+                                                </div><div class="gap-patch">
+                                                    <div class="circle"></div>
+                                                </div><div class="circle-clipper right">
+                                                    <div class="circle"></div>
+                                                </div>
+                                            </div>
+                                       
+                                            <div class="spinner-layer spinner-red">
+                                                <div class="circle-clipper left">
+                                                   <div class="circle"></div>
+                                                </div><div class="gap-patch">
+                                                    <div class="circle"></div>
+                                                </div><div class="circle-clipper right">
+                                                    <div class="circle"></div>
+                                                </div>
+                                            </div>
+                                       
+                                            <div class="spinner-layer spinner-yellow">
+                                                <div class="circle-clipper left">
+                                                    <div class="circle"></div>
+                                                </div><div class="gap-patch">
+                                                    <div class="circle"></div>
+                                                </div><div class="circle-clipper right">
+                                                    <div class="circle"></div>
+                                                </div>
+                                            </div>
+                                       
+                                            <div class="spinner-layer spinner-green">
+                                                <div class="circle-clipper left">
+                                                    <div class="circle"></div>
+                                                </div><div class="gap-patch">
+                                                    <div class="circle"></div>
+                                                </div><div class="circle-clipper right">
+                                                    <div class="circle"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <p id="message">
+
+                                            Ihre Reservierung war erfolgreich!
+                                            
+                                        </p>
+
+                                        
+                                    </div>
+                                    <div class="card-action align-left">
+                                        <a href="reservierung.html" id="dismiss" class="btn-flat disabled">Verstanden</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
                     
                 </div>
             
