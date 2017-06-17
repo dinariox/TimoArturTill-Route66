@@ -98,7 +98,7 @@
     
 }
 
-.active {
+.active-a {
 
     border-bottom: 5px solid #c83333;
     
@@ -236,5 +236,11 @@ h2 {
 .even-darker-grey {
 
     background-color: #151515 !important;
+    
+}
+
+.collapsible {
+
+    text-align: left;
     
 }

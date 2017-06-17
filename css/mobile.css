@@ -105,5 +105,11 @@
         padding-right: 18px;
         
     }
+
+    #navbar-wrapper {
+
+        top: 0;
+        
+    }
     
 }
