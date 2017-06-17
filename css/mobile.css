@@ -16,14 +16,21 @@
     
 }
 
+#navbar-mini a {
+
+    text-decoration: none;
+    
+}
+
 .nav-link-mini div {
 
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 14px;
+    padding-bottom: 14px;
 
     text-align: center;
-    text-decoration: none;
     color: white;
+
+    font-size: 20px;
     
 }
 
@@ -46,6 +53,8 @@
     
 }
 
+
+/* FÜR GERÄTE MIT WENIGER ALS 1270px BREITE (TABLETS, 4:3 Bildschirme, etc) */
 @media only screen and (max-width: 1270px) {
     
     #navbar {
@@ -57,6 +66,43 @@
     #menu-button {
 
         display: block;
+        
+    }
+
+    #banner {
+
+        height: 260px;
+        
+    }
+
+    #boxes-wrapper {
+
+        flex-direction: column;
+        
+    }
+
+    .box {
+
+        width: 100%;
+        margin-bottom: 20px;
+        
+    }
+       
+}
+
+/* FÜR GERÄTE MIT WENIGER ALS 600px BREITE (SMARTPHONES, etc) */
+@media only screen and (max-width: 600px) {
+    
+    #banner {
+
+        display: none;
+        
+    }
+
+    #content-wrapper {
+
+        padding-left: 18px;
+        padding-right: 18px;
         
     }
     

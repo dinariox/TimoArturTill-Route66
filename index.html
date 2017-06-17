@@ -12,6 +12,9 @@
         
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/mobile.css">
+
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
         
     </head>
     
@@ -21,11 +24,11 @@
 
             <div id="navbar-wrapper">
 
-                <a><img src="img/logo.png" id="logo" /><h1>American Diner - Route 66</h1></a>
+                <a href="#"><img src="img/logo-wide.png" id="logo" /></a>
 
                 <div id="navbar">
 
-                    <a class="nav-link" href="#"><div><p>Home</p></div></a>
+                    <a class="nav-link active" href="#"><div><p>Home</p></div></a>
                     <a class="nav-link" href="#"><div><p>Speisekarte</p></div></a>
                     <a class="nav-link" href="#"><div><p>Reservierung</p></div></a>
                     <a class="nav-link" href="#"><div><p>Anfahrt</p></div></a>
@@ -53,11 +56,128 @@
                 
             </div>
 
-            <div id="banner">
+            <div id="banner"></div>
 
-                
-                
+
+            <div id="content-wrapper">
+
+                <div id="content">
+
+                    <h1>Willkommen auf der Seite des American Diners: Route 66</h1>
+
+                    <p>
+                        Direkt hinter der Eingangstür eine ganz andere Welt: Rote Lederbänke, Rock´n´Roll aus der Jukebox, glänzendes Chrom an den Wänden und US-Oldtimer auf dem Parkplatz. Doch das wichtigste: echte amerikanische Küche. Wir bieten Burger, Steaks, Salads und vieles mehr von bester Qualität an. Mit uns ist Amerika ganz nah!
+                    </p>
+                    <p class="small-margin-top">
+                        Informieren Sie sich unter <a class="link" href="speisekarte.html">Speisekarte</a> über unsere Angebote!
+                    </p>
+
+
+                    <div id="boxes-wrapper" class="big-margin-top">
+
+                        <!-- Öffnungszeiten -->
+                        <div class="box center">
+
+                            <h2 class="center">Öffnungszeiten</h2>
+
+                            <p>
+                                <span class="medium-weight">Montag, Mittwoch, Donnerstag</span><br />
+                                11:30 - 23:00
+                            </p>
+                            <p>
+                                <span class="medium-weight">Freitag, Samstag</span><br />
+                                11:00 - 0:00
+                            </p>
+                            <p>
+                                <span class="medium-weight">Sonntag und Feiertage</span><br />
+                                11:30 - 22:00
+                            </p>
+
+                            <p class="small-margin-top grey-text">
+                                Dienstag ist Ruhetag
+                            </p>
+                            
+                        </div>
+
+                        <!-- Tischreservierung -->
+                        <div class="box center">
+
+                            <h2 class="center">Tischreservierung</h2>
+
+                            <p>
+                                Sie planen einen Besuch und möchten daher einen Tisch reservieren?
+                            </p>
+                            <p>
+                                Bei uns können Sie problemlos nach verfügbaren Tischen an Ihrem Wunsch-Datum suchen.
+                            </p>
+
+                            <!-- Dieser Link/Button wird hauptsächlich durch das Materialize-Framework gestyled -->
+                            <a class="waves-effect waves-light btn medium-margin-top red darken-3 tooltipped" data-position="right" data-delay="50" data-tooltip="Kostenlos!"><i class="material-icons right">send</i>Reservieren</a>
+                            
+                        </div>
+
+                        <!-- Kartenzahlung -->
+                        <div class="box center">
+
+                            <h2 class="center">Kartenzahlung</h2>
+
+                            <p>
+                                Bei uns können Sie sowohl in Bar, als auch bargeldlos mit EC, Maestro, MasterCard und Visa zahlen.
+                            </p>
+
+                            <img id="credit_card" class="small-margin-top" src="img/credit-card.svg" />
+                            
+                        </div>
+                        
+                    </div>
+
+                    <p class="big-margin-top">
+                        Wenn Ihnen der Besuch bei uns gefallen hat, würden wir uns freuen, wenn Sie sich ein paar Minuten Zeit nehmen um Feedback zu geben. Aber auch Vorschläge und Kritik lesen wir uns gerne durch.
+                    </p>
+
+                    <div class="stars">
+
+                        <!-- Dieser Link/Button wird hauptsächlich durch das Materialize-Framework gestyled -->
+                        <a class="waves-effect waves-light btn medium-margin-top light-blue darken-3"><i class="material-icons left">star_half</i>Feedback geben</a>
+                        
+                    </div>
+                    
+                </div>
+            
             </div>
+
+
+            <!-- Dieser Footer wird hauptsächlich durch das Materialize-Framework gestyled -->
+            <footer class="page-footer grey darken-4 big-margin-top">
+              <div class="container">
+                <div class="row">
+                  <div class="col l6 s12">
+                    <h5 class="white-text">American Diner: Route 66</h5>
+                    <p class="grey-text text-lighten-4">Ein Schulprojekt (Diff IT) des EGM</p>
+                  </div>
+                  <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Sitemap</h5>
+                    <ul class="left">
+                      <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
+                      <li><a class="grey-text text-lighten-3" href="#!">Speisekarte</a></li>
+                      <li><a class="grey-text text-lighten-3" href="#!">Reservierung</a></li>
+                      <li><a class="grey-text text-lighten-3" href="#!">Anfahrt</a></li>
+                    </ul>
+                    <ul class="right">
+                      <li><a class="grey-text text-lighten-3" href="#!">Feedback</a></li>
+                      <li><a class="grey-text text-lighten-3" href="#!">Jobs</a></li>
+                      <li><a class="grey-text text-lighten-3" href="#!">Kontakt</a></li>
+                      <li><a class="grey-text text-lighten-3" href="#!">Impressum</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-copyright even-darker-grey">
+                <div class="container">
+                © 2017 Timo Nowak, Artur Makarenko, Till Hammer
+                </div>
+              </div>
+            </footer>
             
         </div>
 
@@ -66,7 +186,8 @@
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="js/main.js"></script>
-        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    
     </body>
     
 </html>
