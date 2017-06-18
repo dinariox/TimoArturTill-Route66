@@ -64,8 +64,9 @@ if($.urlParam('person_count') != null) {
 }
 
 
-function reservieren() {
+function sendFeedback() {
 
-    document.getElementById('form-reservieren').submit();
+    $('#feedback-success').css('display', 'block');
+    $('#give-feedback').css('display', 'none');
     
 }

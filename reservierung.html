@@ -90,30 +90,30 @@
                         <!-- Dieser Slider wird hauptsächlich durch das Materialize-Framework gestyled -->
                         <label>Personenanzahl:</label>
                         <p class="range-field">
-                            <input type="range" name="person_count" id="person_count" min="1" max="20" value="2" />
+                            <input required type="range" name="person_count" id="person_count" min="1" max="20" value="2" />
                         </p>
 
                         <br />
                         
                         <label>Datum auswählen</label>
-                        <input type="date" name="date" class="datepicker">
+                        <input required type="date" name="date" class="datepicker">
 
                         <br />
                         <br />
 
                         <label>Uhrzeit auswählen</label>
-                        <input type="time" name="time" step="300" />
+                        <input required type="time" name="time" step="300" />
 
                         <br />
                         <br />
 
                         <div class="input-field">
-                            <input id="last_name" name="name" type="text" class="validate">
+                            <input required id="last_name" name="name" type="text" class="validate">
                             <label for="last_name">Ihr Nachname</label>
                         </div>
 
                         <!-- Dieser Link/Button wird hauptsächlich durch das Materialize-Framework gestyled -->
-                        <a class="waves-effect waves-light btn medium-margin-top red darken-3" onclick="reservieren();"><i class="material-icons right">send</i>Reservieren</a>
+                        <button class="btn waves-effect waves-light medium-margin-top red darken-3" type="submit" name="action">Reservieren<i class="material-icons right">send</i></button>
                         
                     </form>
 

@@ -1,4 +1,5 @@
 /* CSS © 2017 by Timo Nowak, Artur Makarenko & Till Hammer */
+/* Wenn ein !important hinter einem Wert steht, ist das normalerweise so, damit der Wert der bei Materialize gesetzt wurde überschrieben wird */
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Bitter:700');
@@ -257,7 +258,7 @@ h2 {
     
 }
 
-#success-div, #message, #success-title {
+#success-div, #message, #success-title, #feedback-success {
 
     display: none;
     
@@ -267,5 +268,12 @@ h2 {
 
     width: 100%;
     height: 500px;
+    
+}
+
+
+.title {
+
+    font-size: 14pt !important;
     
 }

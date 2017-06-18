@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="de">
+
+    <head>
+
+        <title>American Diner: Route 66</title>
+        
+        <meta name="author" content="Timo Nowak, Artur Makarenko, Till Hammer">
+        
+        <!-- Für die korrekte Darstellung auf Mobilgeräten -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+        <!-- Mit diesem Meta Tag kann man problemlos Umlaute und sonstige Sonderzeichen benutzen -->
+        <meta charset="utf-8">
+
+        <!-- In einigen Smartphone-Browsern wird hierdurch die Farbe der Status und Navigationsleiste geändert -->
+        <meta name="theme-color" content="#222222">
+
+        <!-- Das kleine Icon, was im Browser im Tab oder neben einem Lesezeichen angezeigt wird, setzen -->
+        <link rel="icon" type="image/png" href="img/favicon.png">
+
+        <!-- CSS einbinden -->
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/mobile.css">
+
+        <!-- Die Material Icons Schriftart erlaubt es innerhalb eines <i> Tags mit der Klasse material-icon den Namen eines Symbols zu schreiben, damit dieses dort angezeigt wird -->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Das Materialize-Framework ist eine Art Plugin, welches vorgegene CSS und JavaScript Funktionen hat. Damit ist es einfach Webseiten aussehen zu lassen, wie Android Apps -->
+        <!-- Wir benutzen davon Hauptsächlich Button-Styles, Form-Styles und Collapsibles unter Speisekarte. Der Rest der Seite ist aber selbst gestyled -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+        
+    </head>
+    
+    <body>
+        
+        <div id="site-wrapper">
+
+            <div id="navbar-wrapper">
+
+                <a href="#"><img src="img/logo-wide.png" id="logo" /></a>
+
+                <div id="navbar">
+
+                    <a class="nav-link" href="/"><div><p><i class="material-icons">home</i></p></div></a>
+                    <a class="nav-link" href="speisekarte.html"><div><p>Speisekarte</p></div></a>
+                    <a class="nav-link" href="reservierung.html"><div><p>Reservierung</p></div></a>
+                    <a class="nav-link" href="anfahrt.html"><div><p>Anfahrt</p></div></a>
+                    <a class="nav-link active-a" href="feedback.html"><div><p>Feedback</p></div></a>
+                    <a class="nav-link" href="jobs.html"><div><p>Jobs</p></div></a>
+                    <a class="nav-link" href="kontakt.html"><div><p>Kontakt</p></div></a>
+                    <a class="nav-link" href="impressum.html"><div><p>Impressum</p></div></a>
+                    
+                </div>
+
+                <div id="menu-button"></div>
+                <!-- Versteckte Navbar, die bei klicken auf den Menü Button gezeigt wird (für mobile Geräte) -->
+                <div id="navbar-mini">
+    
+                    <a class="nav-link-mini" href="/"><div><p>Home</p></div></a>
+                    <a class="nav-link-mini" href="speisekarte.html"><div><p>Speisekarte</p></div></a>
+                    <a class="nav-link-mini" href="reservierung.html"><div><p>Reservierung</p></div></a>
+                    <a class="nav-link-mini" href="anfahrt.html"><div><p>Anfahrt</p></div></a>
+                    <a class="nav-link-mini" href="feedback.html"><div><p>Feedback</p></div></a>
+                    <a class="nav-link-mini" href="jobs.html"><div><p>Jobs</p></div></a>
+                    <a class="nav-link-mini" href="kontakt.html"><div><p>Kontakt</p></div></a>
+                    <a class="nav-link-mini" href="impressum.html"><div><p>Impressum</p></div></a>
+                    
+                </div>
+                
+            </div>
+
+            <div id="banner"></div>
+
+
+            <div id="content-wrapper">
+
+                <div id="content">
+
+                    <h1>Wenn Ihnen der Besuch bei uns gefallen hat, oder wenn Sie Vorschläge haben, können Sie uns hier Feedback geben</h1>
+
+                    <p>
+                        Wir freuen uns, wenn Sie uns positiv bewerten, aber lesen uns auch gerne Kritik und Verbesserungsvorschläge an!
+                    </p>
+                    <p class="small-margin-top">
+                        Falls Sie eine private Nachricht an uns verfassen möchten, können Sie das unter <a class="link" href="kontakt.html">Kontak</a> machen.
+                    </p>
+
+                    <p class="big-margin-top">
+                        Hier können Sie sich Feedback und Bewertungen von anderen Gästen durchlesen. Möchten Sie auch Ihre Meinung sagen? Klicken Sie dazu einfach auf <span class="medium-weight">Feedback geben</span>. Sie werden dann auf ein Formular weitergeleitet, in dem Sie Ihre Nachricht so wie eine Wertung von 1 bis 5 Sternen abgeben können. Wenn Sie möchten, können Sie auch Ihren Namen angeben. Ansonsten wird der Beitrag anonym gepostet.
+                    </p>
+
+                    <!-- Dieser Link/Button wird hauptsächlich durch das Materialize-Framework gestyled -->
+                    <a href="#give-feedback" class="waves-effect waves-light btn medium-margin-top light-blue darken-3"><i class="material-icons left">thumbs_up_down</i>Feedback geben</a>
+
+
+                    <div id="feedback" class="big-margin-top">
+
+                        <!-- Diese Auflistung wird hauptsächlich durch das Materialize-Framework gestyled -->
+                        <ul class="collection left-align">
+                            <li class="collection-item avatar">
+                                <i class="material-icons circle yellow darken-1">person</i>
+                                <span class="title">Lecker und freundliches Personal!</span>
+                                <p>
+                                    Die Preise sind größtenteils sehr fair. Das Personal ist immer freundlich und auch recht schnell. Ich fände ein bisschen mehr Auswahl ganz gut! <br>
+                                    Insgesamt kann man sagen: ein Besuch lohnt sich auf jeden Fall!
+                                </p>
+                                <p class="grey-text">
+                                    - Anonymer Gast
+                                </p>
+                                <p class="secondary-content"><i class="material-icons">gradegradegradegradestar_half</i></p>
+                            </li>
+                            <li class="collection-item avatar">
+                                <i class="material-icons circle green lighten-1">person</i>
+                                <span class="title">Schöne Atmosphäre</span>
+                                <p>
+                                    Ich finde es gemütlich und freundlich! Nette Menschen dort.<br />
+                                    Man fühlt sich echt fast wie in Amerika
+                                </p>
+                                <p class="grey-text">
+                                    - Anonymer Gast
+                                </p>
+                                <p class="secondary-content"><i class="material-icons">gradegradegradegradegrade</i></p>
+                            </li>
+                            <li class="collection-item avatar">
+                                <i class="material-icons circle blue lighten-2">face</i>
+                                <span class="title">Nicht ganz meins, aber Essen trotzdem gut</span>
+                                <p>
+                                    Ich steht nicht so auf dieses amerikanische Essen, aber wer das mag ist hier gut aufgehoben. Das Personal ist sehr nett und hilfsbereit. Für Amerika-Fans einen Besuch wert!
+                                </p>
+                                <p class="grey-text">
+                                    - Petra Gärtner
+                                </p>
+                                <p class="secondary-content"><i class="material-icons">gradegradegradestar_halfstar_outline</i></p>
+                            </li>
+                            <li class="collection-item avatar">
+                                <i class="material-icons circle red lighten-1">person</i>
+                                <span class="title">Gefällt mir sehr gut!!</span>
+                                <p>
+                                    Richtig cool der Laden! Das Essen ist super, ich werde noch öfters kommen!
+                                </p>
+                                <p class="grey-text">
+                                    - Anonymer Gast
+                                </p>
+                                <p class="secondary-content"><i class="material-icons">gradegradegradegradegrade</i></p>
+                            </li>
+                        </ul>
+
+                        <!-- Dieser Link/Button wird hauptsächlich durch das Materialize-Framework gestyled -->
+                        <a class="waves-effect waves-light btn-flat red-text text-darken-4 tooltipped" data-position="bottom" data-delay="50" data-tooltip="Funktioniert nicht :D"><i class="material-icons left">refresh</i>Weitere laden</a>
+                        
+                    </div>
+
+                    <div class="big-margin-top">
+
+                        <div id="give-feedback" class="card blue-grey darken-1 left-align">
+                            <div class="card-content white-text">
+                                <span class="card-title">Feedback geben</span>
+                                <p>Hier können Sie einen Kommentar schreiben und eine Bewertung von 1 bis 5 Sterne abgeben.</p>
+
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <i class="material-icons prefix">face</i>
+                                        <input id="name" type="text" class="validate">
+                                        <label for="name">Ihre Name (optional)</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <i class="material-icons prefix">mail</i>
+                                        <input id="email" type="email" class="validate">
+                                        <label for="email">Email für Fragen unsererseits (optional)</label>
+                                    </div>
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix">textsms</i>
+                                        <textarea id="textarea1" class="materialize-textarea" data-length="250"></textarea>
+                                        <label for="textarea1">Ihr Kommentar</label>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="row">
+
+                                    <p class="white-text">Mit wie vielen <i class="material-icons tiny">grade</i> möchten Sie uns bewerten?</p>
+                                    
+                                    <div class="input-field col s12">
+                                        <p class="range-field">
+                                            <input type="range" id="test5" min="1" max="5" step="0.5" />
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="card-action">
+                                <a href="#feedback-success" onclick="sendFeedback();">Beitrag veröffentlichen</a>
+                                <a href="feedback.html">Abbrechen</a>
+                            </div>
+                        </div>
+
+
+                        <div id="feedback-success" class="card blue-grey darken-1 left-align">
+                            <div class="card-content white-text">
+                                <span class="card-title">Feedback geben</span>
+                                
+                                <p>Vielen Dank, Ihr Feedback wird nun überprüft, bevor es veröffentlicht werden kann.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="feedback.html">Verstanden</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            
+            </div>
+
+
+            <!-- Dieser Footer wird hauptsächlich durch das Materialize-Framework gestyled -->
+            <footer class="page-footer grey darken-4 big-margin-top">
+              <div class="container">
+                <div class="row">
+                  <div class="col l6 s12">
+                    <h5 class="white-text">American Diner: Route 66</h5>
+                    <p class="grey-text text-lighten-4">Ein Schulprojekt (Diff IT) des EGM</p>
+                  </div>
+                  <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Sitemap</h5>
+                    <ul class="left">
+                      <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
+                      <li><a class="grey-text text-lighten-3" href="#!">Speisekarte</a></li>
+                      <li><a class="grey-text text-lighten-3" href="#!">Reservierung</a></li>
+                      <li><a class="grey-text text-lighten-3" href="#!">Anfahrt</a></li>
+                    </ul>
+                    <ul class="right">
+                      <li><a class="grey-text text-lighten-3" href="#!">Feedback</a></li>
+                      <li><a class="grey-text text-lighten-3" href="#!">Jobs</a></li>
+                      <li><a class="grey-text text-lighten-3" href="#!">Kontakt</a></li>
+                      <li><a class="grey-text text-lighten-3" href="#!">Impressum</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-copyright even-darker-grey">
+                <div class="container">
+                © 2017 Timo Nowak, Artur Makarenko, Till Hammer
+                </div>
+              </div>
+            </footer>
+            
+        </div>
+
+
+        <!-- JavaScript / jQuery -->
+        <!-- Die Skripte werden erst zum Schluss geladen, damit eine Funktionen im Code funktionieren, aber auch dafür, dass erst die wichtigen, sichtbaren Elemente der Website geladen werden -->
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    
+    </body>
+    
+</html>
