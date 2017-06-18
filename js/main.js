@@ -70,3 +70,10 @@ function sendFeedback() {
     $('#give-feedback').css('display', 'none');
     
 }
+
+function sendMessage() {
+
+    $('#kontakt-success').css('display', 'block');
+    $('#send-message').css('display', 'none');
+    
+}

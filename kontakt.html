@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="de">
+
+    <head>
+
+        <title>American Diner: Route 66</title>
+        
+        <meta name="author" content="Timo Nowak, Artur Makarenko, Till Hammer">
+        
+        <!-- Für die korrekte Darstellung auf Mobilgeräten -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+        <!-- Mit diesem Meta Tag kann man problemlos Umlaute und sonstige Sonderzeichen benutzen -->
+        <meta charset="utf-8">
+
+        <!-- In einigen Smartphone-Browsern wird hierdurch die Farbe der Status und Navigationsleiste geändert -->
+        <meta name="theme-color" content="#222222">
+
+        <!-- Das kleine Icon, was im Browser im Tab oder neben einem Lesezeichen angezeigt wird, setzen -->
+        <link rel="icon" type="image/png" href="img/favicon.png">
+
+        <!-- CSS einbinden -->
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/mobile.css">
+
+        <!-- Die Material Icons Schriftart erlaubt es innerhalb eines <i> Tags mit der Klasse material-icon den Namen eines Symbols zu schreiben, damit dieses dort angezeigt wird -->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Das Materialize-Framework ist eine Art Plugin, welches vorgegene CSS und JavaScript Funktionen hat. Damit ist es einfach Webseiten aussehen zu lassen, wie Android Apps -->
+        <!-- Wir benutzen davon Hauptsächlich Button-Styles, Form-Styles und Collapsibles unter Speisekarte. Der Rest der Seite ist aber selbst gestyled -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+        
+    </head>
+    
+    <body>
+        
+        <div id="site-wrapper">
+
+            <div id="navbar-wrapper">
+
+                <a href="#"><img src="img/logo-wide.png" id="logo" /></a>
+
+                <div id="navbar">
+
+                    <a class="nav-link" href="/"><div><p><i class="material-icons">home</i></p></div></a>
+                    <a class="nav-link" href="speisekarte.html"><div><p>Speisekarte</p></div></a>
+                    <a class="nav-link" href="reservierung.html"><div><p>Reservierung</p></div></a>
+                    <a class="nav-link" href="anfahrt.html"><div><p>Anfahrt</p></div></a>
+                    <a class="nav-link" href="feedback.html"><div><p>Feedback</p></div></a>
+                    <a class="nav-link" href="jobs.html"><div><p>Jobs</p></div></a>
+                    <a class="nav-link active-a" href="kontakt.html"><div><p>Kontakt</p></div></a>
+                    <a class="nav-link" href="impressum.html"><div><p>Impressum</p></div></a>
+                    
+                </div>
+
+                <div id="menu-button"></div>
+                <!-- Versteckte Navbar, die bei klicken auf den Menü Button gezeigt wird (für mobile Geräte) -->
+                <div id="navbar-mini">
+    
+                    <a class="nav-link-mini" href="/"><div><p>Home</p></div></a>
+                    <a class="nav-link-mini" href="speisekarte.html"><div><p>Speisekarte</p></div></a>
+                    <a class="nav-link-mini" href="reservierung.html"><div><p>Reservierung</p></div></a>
+                    <a class="nav-link-mini" href="anfahrt.html"><div><p>Anfahrt</p></div></a>
+                    <a class="nav-link-mini" href="feedback.html"><div><p>Feedback</p></div></a>
+                    <a class="nav-link-mini" href="jobs.html"><div><p>Jobs</p></div></a>
+                    <a class="nav-link-mini" href="kontakt.html"><div><p>Kontakt</p></div></a>
+                    <a class="nav-link-mini" href="impressum.html"><div><p>Impressum</p></div></a>
+                    
+                </div>
+                
+            </div>
+
+            <div id="banner"></div>
+
+
+            <div id="content-wrapper">
+
+                <div id="content">
+
+                    <h1>Hier können Sie Kontakt mit uns aufnehmen</h1>
+
+                    <p>
+                        Unten finden Sie ein Kontaktformular, in das Sie Ihre Nachricht zusammen mit Namen und Email für unsere Antwort eingeben können.
+                    </p>
+                    <p class="small-margin-top">
+                        Alternativ können Sie auch direkt eine Email an <span class="medium-weight">info@meinerzhagen-route66.de</span> schreiben.
+                    </p>
+
+
+                    <br />
+
+                    <!-- Dieses Formular wird hauptsächlich durch das Materialize-Framework gestyled -->
+                    <div id="send-message" class="card blue-grey darken-1 left-align">
+                        <div class="card-content white-text">
+                            <span class="card-title">Eine Nachricht an uns schreiben</span>
+                            <p>Hier können Sie eine private Nachricht schreiben. Geben Sie bitte Ihre Email an, damit wir Ihnen antworten können.</p>
+
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <i class="material-icons prefix">face</i>
+                                    <input id="name" type="text" class="validate">
+                                    <label for="name">Ihr Name</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <i class="material-icons prefix">mail</i>
+                                    <input id="email" type="email" class="validate">
+                                    <label for="email">Ihre Email</label>
+                                </div>
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">textsms</i>
+                                    <textarea id="textarea1" class="materialize-textarea" data-length="250"></textarea>
+                                    <label for="textarea1">Ihre Nachricht</label>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="card-action">
+                            <a href="#kontakt-success" onclick="sendMessage();">Nachricht senden</a>
+                            <a href="kontakt.html">Abbrechen</a>
+                        </div>
+                    </div>
+
+
+                    <div id="kontakt-success" class="card blue-grey darken-1 left-align">
+                        <div class="card-content white-text">
+                            <span class="card-title">Nachricht gesendet</span>
+                            
+                            <p>Vielen Dank, wir werden Ihnen so schnell wie möglich antworten!</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="kontakt.html">Verstanden</a>
+                        </div>
+                    </div>
+
+                </div>
+            
+            </div>
+
+
+            <!-- Dieser Footer wird hauptsächlich durch das Materialize-Framework gestyled -->
+            <footer class="page-footer grey darken-4 big-margin-top">
+              <div class="container">
+                <div class="row">
+                  <div class="col l6 s12">
+                    <h5 class="white-text">American Diner: Route 66</h5>
+                    <p class="grey-text text-lighten-4">Ein Schulprojekt (Diff IT) des EGM</p>
+                  </div>
+                  <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Sitemap</h5>
+                    <ul class="left">
+                      <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
+                      <li><a class="grey-text text-lighten-3" href="#!">Speisekarte</a></li>
+                      <li><a class="grey-text text-lighten-3" href="#!">Reservierung</a></li>
+                      <li><a class="grey-text text-lighten-3" href="#!">Anfahrt</a></li>
+                    </ul>
+                    <ul class="right">
+                      <li><a class="grey-text text-lighten-3" href="#!">Feedback</a></li>
+                      <li><a class="grey-text text-lighten-3" href="#!">Jobs</a></li>
+                      <li><a class="grey-text text-lighten-3" href="#!">Kontakt</a></li>
+                      <li><a class="grey-text text-lighten-3" href="#!">Impressum</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-copyright even-darker-grey">
+                <div class="container">
+                © 2017 Timo Nowak, Artur Makarenko, Till Hammer
+                </div>
+              </div>
+            </footer>
+            
+        </div>
+
+
+        <!-- JavaScript / jQuery -->
+        <!-- Die Skripte werden erst zum Schluss geladen, damit eine Funktionen im Code funktionieren, aber auch dafür, dass erst die wichtigen, sichtbaren Elemente der Website geladen werden -->
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    
+    </body>
+    
+</html>
