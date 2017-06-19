@@ -2,7 +2,6 @@
 /* Wenn ein !important hinter einem Wert steht, ist das normalerweise so, damit der Wert der bei Materialize gesetzt wurde überschrieben wird */
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700');
-@import url('https://fonts.googleapis.com/css?family=Bitter:700');
 
 * {
 
